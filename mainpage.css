@@ -62,5 +62,13 @@ body {
 /*******************************************************************************************************/
 
 .bio {
-	vertical-align: middle;
+	background-color: blue;
+}
+
+.bio > .entry {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 800px;
+	background-color: red;
 }
