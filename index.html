@@ -45,18 +45,55 @@
 	
 	<!-- this container will hold the entirety of the project section. should be 3 projects-ish -->
 	<div class="container" id="project-section">
-		<div class="entry">
-			<div class="image">
+		<div class="entry" id="project-list">
+			<ul>
+				<li>
+					<div class="expand-container">
+						<a class="expander" href="#">
+							<div class="image" id="clickable-image">
+								<img src="http://placehold.it/300x300" />
+							</div>
+						</a>
+					</div>
+					<li>
+					<div class="expand-container">
+						<a class="expander" href="#">
+							<div class="image" id="clickable-image">
+								<img src="http://placehold.it/300x300" />
+							</div>
+						</a>
+					</div>
+					<li>
+					<div class="expand-container">
+						<a class="expander" href="#">
+							<div class="image" id="clickable-image">
+								<img src="http://placehold.it/300x300" />
+							</div>
+						</a>
+					</div>
+				</li>
+			</ul>
+			<div class="content">
+				<p>Hey look at me I'm a computer</p>
+			</div>
+			
+			<!--<div class="image">
 				<img src="http://placehold.it/300x300" alt="Project Picture">
 			</div>
 			<div class="text">
 				<h1>iHeartPaint</h1>
 				<p>Paint swatches, upgraded.</p>
-			</div>
+			</div>-->
 		</div>	
 	</div>
 	
 	<!-- jquery source -->
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<!-- simple expand, for expanding text -->
+	<script src="https://raw.github.com/redhotsly/simple-expand/master/src/simple-expand.min.js"></script>
+	
+	<script>
+		$(".expand-container").simpleexpand();
+	</script>
 </body>
 </html>

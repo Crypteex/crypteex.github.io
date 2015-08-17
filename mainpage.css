@@ -96,7 +96,7 @@ body {
 	height: 325px;
 }
 
-.entry > .image {
+.image {
 	width: 325px;
 	height: 325px;
 	background-color: #758173;
@@ -104,7 +104,7 @@ body {
 	float: left;
 }
 
-.entry > .image img {
+.image img {
 	border-radius: 50%;
 	position: relative;
 	left: 50%;
@@ -112,7 +112,7 @@ body {
 	transform: translate(-50%, -50%);
 }
 
-.entry > .text {
+.text {
 	font-family: 'Raleway', sans-serif;
 	float: right;
 	width: 450px;
@@ -120,11 +120,11 @@ body {
 	padding-left: 10px;
 }
 
-.entry > .text h1 {
+.text h1 {
 	font-weight: 800;
 }
 
-.entry > .text p {
+.text p {
 	margin-top: 20px;
 	font-weight: 300;
 	font-size: 20px;
@@ -140,4 +140,21 @@ body {
 	padding-bottom: 20px;
 	background-color: #FFF4E9;
 	color: #758173;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.content {
+	display: none;
+}
+
+#project-list {
+	width: 975px;
+}
+
+#project-list > .expander {
+	margin-left: 10px;
+	margin-right: 10px;
 }
