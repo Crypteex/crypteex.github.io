@@ -150,11 +150,17 @@ ul {
 	display: none;
 }
 
-#project-list {
-	width: 975px;
+.project-list {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	list-style-type: none;
 }
 
-#project-list > .expander {
-	margin-left: 10px;
-	margin-right: 10px;
+.project-list > .expander {
+}
+
+.project-list li {
+	margin-left: 20px;
+	margin-right: 20px;
 }
