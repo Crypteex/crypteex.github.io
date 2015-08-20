@@ -18,6 +18,7 @@ body {
 	position: absoloute;
 	display: inline-block;
 	width: 100%;
+	box-shadow: 0px 5px 5px 0px grey;
 }
 .header > .title {
 	margin-top: 25px;
@@ -74,12 +75,12 @@ body {
 	background-color: lightblue;
 }
 
-*/
+
 #project-section {
 	background-color: #FFF4E9;
 	height: auto; 
 }
-
+*/
 
 /*  these specific id tags will over-write the default styling on image and text in an entry for bio only */
 #bio-image {
@@ -104,6 +105,7 @@ body {
 	background-color: #758173;
 	border-radius: 50%;
 	float: left;
+	box-shadow: 5px 5px 5px 0px grey;
 }
 
 .image img {
@@ -143,23 +145,26 @@ body {
 	background-color: #FFF4E9;
 	color: #758173;
 	height: auto;
+	box-shadow: 0px 5px 5px 0px grey;
 }
 
 .content {
 	display: none;
+	height: auto;
 }
 
 .project-list {
 	margin: 0 auto;
-	width: 65%;
-	padding-left: 20px;
-	padding-right: 20px;
-	list-style-type: none;
+	width: auto;
+	height: auto;
+	margin-top: 25px;
+	text-align: center;
 }
 
-.clickable-image {
-	width: 325px;
-	height: 325px;
-	background-color: #758173;
-	border-radius: 50%;
+.project-selection {
+	list-style-type: none;
+	display: inline;
+	margin-left: 20px;
+	margin-right: 20px;
+	
 }
