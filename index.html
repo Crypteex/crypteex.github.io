@@ -46,7 +46,7 @@
 	<!-- this container will hold the entirety of the project section. should be 3 projects-ish -->
 	<div class="container" id="project-section">
 			<ul class="project-list">
-				<li class="project-selection">A</li>
+				<li class="project-selection"><a id="link" href="iheartpaint.html">A</a></li>
 				<li class="project-selection">B</li>
 				<li class="project-selection">C</li>
 			</ul>
@@ -67,7 +67,15 @@
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	
 	<script>
-		$(".expand-container").simpleexpand();
+		$('body').on('click', '.project-selection', function(event) {
+			event.preventDefault();
+			
+			$('.content').fadeOut(400, function() {
+				$('.content').load("iheartpaint.html #text", function() {
+					$('content').fadeIn(400);
+				});
+			});
+		});
 	</script>
 </body>
 </html>
