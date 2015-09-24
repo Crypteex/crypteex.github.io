@@ -29,7 +29,7 @@
 	<div class="container" id="bio-section">
 		<div class="entry">
 			<div class="image" id="bio-image">
-				<img src="http://lorempizza.com/300/300" alt="My Face">
+				<img src="http://placehold.it/300x300" alt="My Face">
 			</div>
 			<div class="text" id="bio-text">
 				<h1>A visionary, kind of.</h1>
@@ -45,18 +45,37 @@
 	
 	<!-- this container will hold the entirety of the project section. should be 3 projects-ish -->
 	<div class="container" id="project-section">
-		<div class="entry">
-			<div class="image">
+			<ul class="project-list">
+				<li class="project-selection"><a id="link" href="iheartpaint.html">A</a></li>
+				<li class="project-selection">B</li>
+				<li class="project-selection">C</li>
+			</ul>
+			<div class="content">
+				<p>Hey look at me I'm a computer</p>
+			</div>
+			
+			<!--<div class="image">
 				<img src="http://placehold.it/300x300" alt="Project Picture">
 			</div>
 			<div class="text">
 				<h1>iHeartPaint</h1>
 				<p>Paint swatches, upgraded.</p>
-			</div>
-		</div>	
+			</div>-->
 	</div>
 	
 	<!-- jquery source -->
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	
+	<script>
+		$('body').on('click', '.project-selection', function(event) {
+			event.preventDefault();
+			
+			$('.content').fadeOut(400, function() {
+				$('.content').load("iheartpaint.html #text", function() {
+					$('content').fadeIn(400);
+				});
+			});
+		});
+	</script>
 </body>
 </html>

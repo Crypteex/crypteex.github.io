@@ -6,6 +6,7 @@
 
 body {
 	background-color: #f4dfc8;
+	font-family: 'Raleway', sans-serif;
 }
 
 /*******************************************************************************************************/
@@ -17,6 +18,7 @@ body {
 	position: absoloute;
 	display: inline-block;
 	width: 100%;
+	box-shadow: 0px 5px 5px 0px grey;
 }
 .header > .title {
 	margin-top: 25px;
@@ -73,11 +75,12 @@ body {
 	background-color: lightblue;
 }
 
-*/
+
 #project-section {
 	background-color: #FFF4E9;
+	height: auto; 
 }
-
+*/
 
 /*  these specific id tags will over-write the default styling on image and text in an entry for bio only */
 #bio-image {
@@ -96,15 +99,16 @@ body {
 	height: 325px;
 }
 
-.entry > .image {
+.image {
 	width: 325px;
 	height: 325px;
 	background-color: #758173;
 	border-radius: 50%;
 	float: left;
+	box-shadow: 5px 5px 5px 0px grey;
 }
 
-.entry > .image img {
+.image img {
 	border-radius: 50%;
 	position: relative;
 	left: 50%;
@@ -112,7 +116,7 @@ body {
 	transform: translate(-50%, -50%);
 }
 
-.entry > .text {
+.text {
 	font-family: 'Raleway', sans-serif;
 	float: right;
 	width: 450px;
@@ -120,11 +124,11 @@ body {
 	padding-left: 10px;
 }
 
-.entry > .text h1 {
+.text h1 {
 	font-weight: 800;
 }
 
-.entry > .text p {
+.text p {
 	margin-top: 20px;
 	font-weight: 300;
 	font-size: 20px;
@@ -140,4 +144,27 @@ body {
 	padding-bottom: 20px;
 	background-color: #FFF4E9;
 	color: #758173;
+	height: auto;
+	box-shadow: 0px 5px 5px 0px grey;
+}
+
+.content {
+	display: none;
+	height: auto;
+}
+
+.project-list {
+	margin: 0 auto;
+	width: auto;
+	height: auto;
+	margin-top: 25px;
+	text-align: center;
+}
+
+.project-selection {
+	list-style-type: none;
+	display: inline;
+	margin-left: 20px;
+	margin-right: 20px;
+	
 }
